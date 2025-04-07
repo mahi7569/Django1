@@ -1,0 +1,21 @@
+<html>
+   <html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" type="text/css" href="{% static 'myapp/stylesheet.css' %}">-->
+    <title>Login</title>
+</head> 
+<body>    
+    <div>
+        <h1>Welcome To Login Form</h1>
+        <form action="{% url 'login' %}" method="post"> 
+            <!--{% csrf_token %}-->
+            <input type="text" name="text" placeholder="your name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="password" required>    
+            <input type="submit" value="login">                                                                                                 
+        </form>
+    </div>
+</body> 
+</html>          
